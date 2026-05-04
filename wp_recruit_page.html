@@ -1,0 +1,634 @@
+<!-- =====================================================
+  来夢の里 採用情報
+  
+  【ファイル構成】
+  ① 採用情報 固定ページ用HTML（求人内容・応募フォーム）
+  ② 採用情報カテゴリー 投稿記事サンプル3本
+     - 記事A「生活支援員を募集しています」
+     - 記事B「採用FAQ よくある質問」
+     - 記事C「スタッフ紹介」
+  ③ Contact Form 7 応募フォーム設定コード
+  ===================================================== -->
+
+
+<!-- =====================================================
+  ① 採用情報 固定ページ
+  
+  使い方：
+  固定ページ「採用情報」を編集
+  → カスタムHTMLブロックにこのコードを貼る
+  スラッグ：recruit
+  ===================================================== -->
+
+<article style="font-family:'Noto Sans JP',sans-serif;color:#3d2b1f;line-height:1.85">
+
+  <!-- ページヘッダー -->
+  <div style="background:linear-gradient(155deg,#fff9f0,#ffecd5,#ffdcb8);padding:64px 28px;text-align:center;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(192,57,43,.06) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+    <div style="position:relative;z-index:1;max-width:640px;margin:0 auto">
+      <span style="display:inline-block;background:#e67e22;color:#fff;font-size:11px;font-weight:700;letter-spacing:.15em;padding:5px 16px;border-radius:30px;margin-bottom:18px">👩‍⚕️ RECRUIT</span>
+      <h1 style="font-family:'Noto Serif JP',serif;font-size:clamp(26px,4vw,38px);font-weight:700;color:#3d2b1f;margin-bottom:16px;line-height:1.45">
+        一緒に、笑顔をつくる<br>仕事をしませんか？
+      </h1>
+      <p style="font-size:14px;color:#7a5c45;line-height:1.95">
+        来夢の里は「人を大切にする職場」を目指しています。<br>
+        未経験・無資格の方も、あなたの「寄り添う気持ち」を大切にします。
+      </p>
+    </div>
+  </div>
+
+  <!-- 代表メッセージ -->
+  <div style="background:#fff;padding:52px 28px">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="background:#fdf8f2;border-radius:20px;padding:36px 40px;border-left:4px solid #e67e22;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start">
+        <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#fff3e0,#ffdcb8);display:flex;align-items:center;justify-content:center;font-size:36px;flex-shrink:0">👩</div>
+        <div>
+          <span style="font-size:11px;font-weight:700;letter-spacing:.15em;color:#e67e22;display:block;margin-bottom:8px">MESSAGE FROM DIRECTOR</span>
+          <p style="font-size:14px;color:#5a4a3a;line-height:2;margin-bottom:14px">
+            来夢の里は、20年以上「共に生き、共に喜ぶ」を大切にしてきました。
+            私たちのスタッフに求めるのは、資格よりも<strong style="color:#c0392b">人の気持ちに寄り添える心</strong>です。
+          </p>
+          <p style="font-size:14px;color:#5a4a3a;line-height:2;margin-bottom:14px">
+            利用者さんの「できた！」という瞬間、笑顔を見る瞬間が、
+            この仕事のいちばんの喜びです。一緒に、笑顔あふれる場所をつくりましょう。
+          </p>
+          <p style="font-size:13px;color:#7a5c45">
+            特定非営利活動法人 来夢の里　代表　坂本 奈々子
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 来夢で働く魅力 -->
+  <div style="background:#fdf8f2;padding:52px 28px">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:36px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#e67e22;margin-bottom:6px">Benefits</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#3d2b1f">来夢の里で働く魅力</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px">
+        <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 3px 14px rgba(61,43,31,.07)">
+          <span style="font-size:36px;display:block;margin-bottom:12px">👥</span>
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">アットホームな職場</h3>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.75">スタッフ同士の仲が良く、困ったときはすぐ助け合える環境です。新しい方もすぐに馴染めます。</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 3px 14px rgba(61,43,31,.07)">
+          <span style="font-size:36px;display:block;margin-bottom:12px">📚</span>
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">充実した研修制度</h3>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.75">入職後の研修が充実しています。福祉の知識がなくても安心してスタートできます。</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 3px 14px rgba(61,43,31,.07)">
+          <span style="font-size:36px;display:block;margin-bottom:12px">⏰</span>
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">柔軟な働き方</h3>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.75">育児・介護との両立も相談OK。パートからのスタートも歓迎しています。</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 3px 14px rgba(61,43,31,.07)">
+          <span style="font-size:36px;display:block;margin-bottom:12px">📜</span>
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">資格取得支援</h3>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.75">介護福祉士・ヘルパーなど、資格取得をサポートします。スキルアップしながら長く働けます。</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 3px 14px rgba(61,43,31,.07)">
+          <span style="font-size:36px;display:block;margin-bottom:12px">😊</span>
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">やりがいのある仕事</h3>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.75">利用者さんの笑顔や成長を間近で感じられる、特別な仕事です。毎日に張り合いが生まれます。</p>
+        </div>
+        <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 3px 14px rgba(61,43,31,.07)">
+          <span style="font-size:36px;display:block;margin-bottom:12px">🔰</span>
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">未経験・無資格OK</h3>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.75">「福祉の仕事をしてみたい」という気持ちがあれば大丈夫。先輩スタッフが丁寧にサポートします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 募集職種 -->
+  <div style="background:#fff;padding:52px 28px">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:36px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#e67e22;margin-bottom:6px">Positions</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#3d2b1f">募集職種</h2>
+      </div>
+
+      <!-- 職種①：生活支援員 -->
+      <div style="border:2px solid #f0e4d0;border-radius:20px;padding:32px;margin-bottom:22px;transition:border-color .2s" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap">
+          <div style="width:56px;height:56px;border-radius:14px;background:#fff3e0;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">🏥</div>
+          <div>
+            <span style="font-size:11px;color:#e67e22;font-weight:700;letter-spacing:.1em;display:block">POSITION 01</span>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:#3d2b1f">生活支援員</h3>
+          </div>
+          <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:4px 12px;border-radius:20px;font-weight:600">正職員</span>
+            <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:4px 12px;border-radius:20px;font-weight:600">パート</span>
+          </div>
+        </div>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:20px">
+          利用者さんの日中活動のサポート・生活介護の補助・創作活動のお手伝いなどをお任せします。
+          「利用者さんに寄り添いたい」という気持ちがあれば未経験でも大歓迎。
+          先輩スタッフが丁寧にOJTでサポートします。
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">勤務時間</span>
+            <span style="font-size:13px">9:00〜16:00（シフト制）</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">休日</span>
+            <span style="font-size:13px">日・祝・年末年始</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">資格</span>
+            <span style="font-size:13px">不問（福祉資格歓迎）</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">給与</span>
+            <span style="font-size:13px">●●円〜（経験・資格考慮）</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 職種②：製菓・作業補助 -->
+      <div style="border:2px solid #f0e4d0;border-radius:20px;padding:32px;margin-bottom:22px" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap">
+          <div style="width:56px;height:56px;border-radius:14px;background:#fce4ec;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">🧁</div>
+          <div>
+            <span style="font-size:11px;color:#e67e22;font-weight:700;letter-spacing:.1em;display:block">POSITION 02</span>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:#3d2b1f">製菓・作業補助スタッフ</h3>
+          </div>
+          <div style="margin-left:auto">
+            <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:4px 12px;border-radius:20px;font-weight:600">パート</span>
+          </div>
+        </div>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:20px">
+          利用者さんと一緒にお菓子の製造・包装や軽作業を行います。
+          料理・ものづくりが好きな方にぴったりの仕事です。
+          製菓経験がある方は大歓迎ですが、未経験でも問題ありません。
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">勤務時間</span>
+            <span style="font-size:13px">9:30〜15:30（相談可）</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">休日</span>
+            <span style="font-size:13px">日・祝・年末年始</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">資格</span>
+            <span style="font-size:13px">不問</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">給与</span>
+            <span style="font-size:13px">時給●●円〜</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 職種③：送迎ドライバー -->
+      <div style="border:2px solid #f0e4d0;border-radius:20px;padding:32px;margin-bottom:0" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap">
+          <div style="width:56px;height:56px;border-radius:14px;background:#e3f2fd;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">🚌</div>
+          <div>
+            <span style="font-size:11px;color:#e67e22;font-weight:700;letter-spacing:.1em;display:block">POSITION 03</span>
+            <h3 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:#3d2b1f">送迎ドライバー</h3>
+          </div>
+          <div style="margin-left:auto">
+            <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:4px 12px;border-radius:20px;font-weight:600">パート</span>
+          </div>
+        </div>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:20px">
+          利用者さんのご自宅〜施設間の送迎を担当します。
+          安全運転と笑顔のコミュニケーションができる方を歓迎します。
+          早朝・夕方のみの勤務も相談可能です。
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px">
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">勤務時間</span>
+            <span style="font-size:13px">早朝・夕方（相談可）</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">休日</span>
+            <span style="font-size:13px">日・祝・年末年始</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">資格</span>
+            <span style="font-size:13px">普通自動車免許（AT可）</span>
+          </div>
+          <div style="background:#fdf8f2;border-radius:10px;padding:12px 14px">
+            <span style="font-size:11px;color:#e67e22;font-weight:700;display:block;margin-bottom:3px">給与</span>
+            <span style="font-size:13px">時給●●円〜</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 応募の流れ -->
+  <div style="background:#fdf8f2;padding:52px 28px">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:36px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#e67e22;margin-bottom:6px">FLOW</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#3d2b1f">応募から入職までの流れ</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0">
+        <div style="text-align:center;padding:18px 12px">
+          <div style="width:52px;height:52px;border-radius:50%;background:#c0392b;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">1</div>
+          <h3 style="font-size:13px;font-weight:700;margin-bottom:6px">応募・お問い合わせ</h3>
+          <p style="font-size:12px;color:#7a5c45;line-height:1.6">フォームまたはお電話でご連絡ください。「話だけ聞きたい」も歓迎です。</p>
+        </div>
+        <div style="text-align:center;padding:18px 12px">
+          <div style="width:52px;height:52px;border-radius:50%;background:#e67e22;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">2</div>
+          <h3 style="font-size:13px;font-weight:700;margin-bottom:6px">施設見学</h3>
+          <p style="font-size:12px;color:#7a5c45;line-height:1.6">実際の施設の雰囲気を見ていただきます。気軽に質問してください。</p>
+        </div>
+        <div style="text-align:center;padding:18px 12px">
+          <div style="width:52px;height:52px;border-radius:50%;background:#f5c518;color:#3d2b1f;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">3</div>
+          <h3 style="font-size:13px;font-weight:700;margin-bottom:6px">面接</h3>
+          <p style="font-size:12px;color:#7a5c45;line-height:1.6">ご経歴・希望条件などをお聞きします。堅苦しくない雰囲気で行います。</p>
+        </div>
+        <div style="text-align:center;padding:18px 12px">
+          <div style="width:52px;height:52px;border-radius:50%;background:#2e8b57;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">4</div>
+          <h3 style="font-size:13px;font-weight:700;margin-bottom:6px">採用・入職</h3>
+          <p style="font-size:12px;color:#7a5c45;line-height:1.6">入職日・条件を相談のうえ決定。研修からスタートします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 応募フォーム -->
+  <div style="background:#fff;padding:52px 28px" id="apply">
+    <div style="max-width:680px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:36px">
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;margin-bottom:10px;color:#3d2b1f">📝 応募・お問い合わせフォーム</h2>
+        <p style="font-size:13px;color:#7a5c45;line-height:1.8">
+          「まず話だけ聞きたい」「見学したい」だけでも大歓迎です。<br>
+          お気軽にご連絡ください。
+        </p>
+      </div>
+      <div class="raimu-form-box" style="box-shadow:0 6px 28px rgba(61,43,31,.1)">
+        [contact-form-7 id="★採用フォームID★" title="採用応募フォーム"]
+      </div>
+      <p style="font-size:12px;color:#7a5c45;text-align:center;margin-top:16px;line-height:1.8">
+        お電話でのお問い合わせも受け付けています。<br>
+        <a href="tel:0178208641" style="color:#e67e22;font-weight:700;text-decoration:none">📞 0178-20-8641</a>　（9:30〜15:30 / 土日祝・年末年始を除く）
+      </p>
+    </div>
+  </div>
+
+  <!-- 最近の採用記事一覧リンク -->
+  <div style="background:#fdf8f2;padding:44px 28px">
+    <div style="max-width:860px;margin:0 auto;text-align:center">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;margin-bottom:10px;color:#3d2b1f">📰 採用に関するお知らせ</h2>
+      <p style="font-size:13px;color:#7a5c45;margin-bottom:22px">スタッフ紹介・職場の様子など、採用関連の記事をご覧いただけます。</p>
+      <a href="/category/recruit" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:32px;font-size:14px;font-weight:700;text-decoration:none;background:#e67e22;color:#fff;box-shadow:0 4px 14px rgba(230,126,34,.35)">
+        📋 採用情報の記事一覧を見る
+      </a>
+    </div>
+  </div>
+
+</article>
+
+
+<!-- =====================================================
+  ② 採用情報カテゴリー 投稿記事サンプル
+
+  使い方：
+  投稿 → 新規追加
+  カテゴリー：採用情報
+  各記事のコードをカスタムHTMLブロックに貼る
+  ===================================================== -->
+
+
+<!-- -------------------------------------------------
+  記事A
+  タイトル：【募集中】生活支援員・製菓スタッフを募集しています
+  カテゴリー：採用情報
+  ------------------------------------------------- -->
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px;font-family:'Noto Sans JP',sans-serif;color:#3d2b1f;line-height:1.9">
+
+  <div style="background:linear-gradient(135deg,#fff9f0,#fff3e0);border-radius:16px;padding:24px 28px;margin-bottom:36px;border-left:4px solid #e67e22">
+    <p style="font-size:15px;color:#7a5c45;line-height:1.95;margin:0">
+      来夢の里では現在、<strong style="color:#c0392b">生活支援員</strong>と<strong style="color:#c0392b">製菓・作業補助スタッフ</strong>を募集しています。
+      未経験・無資格の方も大歓迎です。「福祉の仕事に興味がある」という方、ぜひご連絡ください。
+    </p>
+  </div>
+
+  <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:#3d2b1f;border-bottom:2px solid #f0e4d0;padding-bottom:10px;margin:36px 0 16px">現在の募集状況</h2>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px">
+    <div style="background:#fff3e0;border-radius:14px;padding:20px;border:1.5px solid #ffd0a0">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px"><span>🏥</span>生活支援員</h3>
+      <ul style="font-size:13px;color:#5a4a3a;line-height:1.9;margin:0;padding-left:16px">
+        <li>雇用形態：正職員・パート</li>
+        <li>勤務時間：9:00〜16:00（シフト制）</li>
+        <li>資格：不問（歓迎）</li>
+        <li>給与：●●円〜</li>
+      </ul>
+    </div>
+    <div style="background:#fce4ec;border-radius:14px;padding:20px;border:1.5px solid #f8bbd0">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px"><span>🧁</span>製菓・作業補助</h3>
+      <ul style="font-size:13px;color:#5a4a3a;line-height:1.9;margin:0;padding-left:16px">
+        <li>雇用形態：パート</li>
+        <li>勤務時間：9:30〜15:30（相談可）</li>
+        <li>資格：不問</li>
+        <li>給与：時給●●円〜</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:#3d2b1f;border-bottom:2px solid #f0e4d0;padding-bottom:10px;margin:36px 0 16px">こんな方を歓迎します</h2>
+  <ul style="font-size:14px;color:#5a4a3a;line-height:2;padding-left:18px;margin-bottom:32px">
+    <li>人と関わる仕事がしたい方</li>
+    <li>「誰かの役に立ちたい」という気持ちがある方</li>
+    <li>子育て・介護が落ち着いて、再就職を考えている方</li>
+    <li>福祉の仕事は初めてだけど興味がある方</li>
+    <li>料理・ものづくりが好きな方（製菓スタッフ）</li>
+  </ul>
+
+  <div style="background:#fdf8f2;border-radius:16px;padding:28px 32px;margin-bottom:32px;border-left:4px solid #e67e22">
+    <strong style="font-size:12px;color:#e67e22;letter-spacing:.1em;display:block;margin-bottom:10px">STAFF VOICE　先輩スタッフより</strong>
+    <p style="font-size:14px;color:#5a4a3a;line-height:2;margin:0">
+      「私も最初は福祉の仕事が初めてで不安でした。でも先輩スタッフがやさしく教えてくれて、
+      利用者さんとの関係が築けてくると毎日が楽しくなりました。
+      利用者さんの笑顔が見られる瞬間が、この仕事をしていてよかったと感じる瞬間です。」
+    </p>
+  </div>
+
+  <div style="background:linear-gradient(135deg,#3d2b1f,#7a5c45);border-radius:18px;padding:32px;text-align:center;color:#fff;margin-top:44px">
+    <p style="font-size:15px;font-weight:600;margin-bottom:8px">まずはお気軽にご連絡ください</p>
+    <p style="font-size:13px;opacity:.85;margin-bottom:20px;line-height:1.8">「見学だけしたい」「話だけ聞きたい」でも大歓迎です。</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="/recruit#apply" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;background:#c0392b;color:#fff">📝 応募フォームへ</a>
+      <a href="tel:0178208641" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;background:#f5c518;color:#3d2b1f">📞 0178-20-8641</a>
+    </div>
+  </div>
+
+</article>
+
+
+<!-- -------------------------------------------------
+  記事B
+  タイトル：採用FAQ｜よくあるご質問にお答えします
+  カテゴリー：採用情報
+  ------------------------------------------------- -->
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px;font-family:'Noto Sans JP',sans-serif;color:#3d2b1f;line-height:1.9">
+
+  <div style="background:linear-gradient(135deg,#fff9f0,#fff3e0);border-radius:16px;padding:24px 28px;margin-bottom:36px;border-left:4px solid #e67e22">
+    <p style="font-size:15px;color:#7a5c45;line-height:1.95;margin:0">
+      「応募を考えているけど、不安なことがある…」という方のために、
+      よくいただくご質問にお答えします。
+    </p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:18px;margin-bottom:44px">
+
+    <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #f0e4d0">
+      <div style="background:#fff3e0;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">Q.</span>
+        <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">福祉の仕事が全く初めてでも大丈夫ですか？</p>
+      </div>
+      <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">A.</span>
+        <p style="font-size:14px;color:#5a4a3a;margin:0;line-height:1.85">大丈夫です！来夢の里では、入職後に丁寧な研修を行っています。先輩スタッフがOJTでサポートしますので、未経験の方も安心してスタートできます。</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #f0e4d0">
+      <div style="background:#fff3e0;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">Q.</span>
+        <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">資格がないと採用されませんか？</p>
+      </div>
+      <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">A.</span>
+        <p style="font-size:14px;color:#5a4a3a;margin:0;line-height:1.85">資格は必須ではありません。介護福祉士・ヘルパー資格などがあれば優遇しますが、「人と関わる仕事がしたい」という気持ちがあれば無資格でも応募できます。入職後の資格取得もサポートします。</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #f0e4d0">
+      <div style="background:#fff3e0;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">Q.</span>
+        <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">子どもがいますが、働けますか？</p>
+      </div>
+      <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">A.</span>
+        <p style="font-size:14px;color:#5a4a3a;margin:0;line-height:1.85">子育て中のスタッフも活躍しています。勤務時間・日数はご相談に応じますので、まずはお気軽にご相談ください。</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #f0e4d0">
+      <div style="background:#fff3e0;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">Q.</span>
+        <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">見学だけしたいのですが、可能ですか？</p>
+      </div>
+      <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">A.</span>
+        <p style="font-size:14px;color:#5a4a3a;margin:0;line-height:1.85">もちろんです！「施設の雰囲気を見てから考えたい」という方の見学を歓迎しています。見学のご予約はお電話またはフォームからどうぞ。</p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #f0e4d0">
+      <div style="background:#fff3e0;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">Q.</span>
+        <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">ブランクがあっても大丈夫ですか？</p>
+      </div>
+      <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+        <span style="font-size:18px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">A.</span>
+        <p style="font-size:14px;color:#5a4a3a;margin:0;line-height:1.85">ブランクがある方も多く活躍しています。「子育てが一段落した」「久しぶりに働きたい」という方もお気軽にご相談ください。一から丁寧にサポートします。</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:linear-gradient(135deg,#3d2b1f,#7a5c45);border-radius:18px;padding:32px;text-align:center;color:#fff">
+    <p style="font-size:15px;font-weight:600;margin-bottom:8px">他にご不明な点があればお気軽に</p>
+    <p style="font-size:13px;opacity:.85;margin-bottom:20px;line-height:1.8">FAQ以外のご質問も、お電話またはフォームから承ります。</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="/recruit#apply" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;background:#c0392b;color:#fff">📝 応募・お問い合わせ</a>
+      <a href="tel:0178208641" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;background:#f5c518;color:#3d2b1f">📞 0178-20-8641</a>
+    </div>
+  </div>
+
+</article>
+
+
+<!-- -------------------------------------------------
+  記事C
+  タイトル：スタッフ紹介｜来夢の里で働く仲間たち
+  カテゴリー：採用情報
+  ※ 写真・実名は差し替えてください
+  ------------------------------------------------- -->
+
+<article style="max-width:780px;margin:0 auto;padding:0 20px;font-family:'Noto Sans JP',sans-serif;color:#3d2b1f;line-height:1.9">
+
+  <div style="background:linear-gradient(135deg,#fff9f0,#fff3e0);border-radius:16px;padding:24px 28px;margin-bottom:36px;border-left:4px solid #e67e22">
+    <p style="font-size:15px;color:#7a5c45;line-height:1.95;margin:0">
+      来夢の里で働くスタッフをご紹介します。
+      さまざまな経歴・年齢のスタッフが、利用者さんの笑顔のために毎日がんばっています。
+    </p>
+  </div>
+
+  <!-- スタッフカード × 3 -->
+  <div style="display:flex;flex-direction:column;gap:28px;margin-bottom:44px">
+
+    <div style="background:#fff;border-radius:18px;padding:28px;border:1.5px solid #f0e4d0;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start">
+      <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#fff3e0,#ffdcb8);display:flex;align-items:center;justify-content:center;font-size:40px;flex-shrink:0">
+        👩
+        <!-- ★ 写真差し替え：<img src="スタッフ写真URL" style="width:80px;height:80px;border-radius:50%;object-fit:cover"> -->
+      </div>
+      <div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700;letter-spacing:.1em;display:block;margin-bottom:4px">STAFF 01 ／ 生活支援員</span>
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:10px">●●さん（入職●年目）</h3>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:10px">
+          前職は全く別の仕事をしていましたが、「人と関わる仕事がしたい」と思い来夢の里に応募しました。
+          最初は不安でしたが、先輩スタッフが丁寧に教えてくれて、すぐに馴染めました。
+        </p>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95">
+          今は利用者さんの顔と名前を覚えて、毎日声をかけるのが楽しみです。
+          「今日も来てくれた！」という笑顔が、この仕事を続ける原動力になっています。
+        </p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:18px;padding:28px;border:1.5px solid #f0e4d0;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start">
+      <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#fce4ec,#f8bbd0);display:flex;align-items:center;justify-content:center;font-size:40px;flex-shrink:0">
+        👨
+      </div>
+      <div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700;letter-spacing:.1em;display:block;margin-bottom:4px">STAFF 02 ／ 製菓・作業補助スタッフ</span>
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:10px">●●さん（入職●年目）</h3>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:10px">
+          料理が好きで、パートで来夢の里に入職しました。
+          最初はお菓子作りのお手伝いだけと思っていましたが、
+          利用者さんとの交流が増えて、今はこの仕事が大好きです。
+        </p>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95">
+          「おいしい！」「また作ってね」と言ってもらえる瞬間がうれしくて、
+          毎回工夫しながらお菓子を作っています。
+        </p>
+      </div>
+    </div>
+
+    <div style="background:#fff;border-radius:18px;padding:28px;border:1.5px solid #f0e4d0;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start">
+      <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#e3f2fd,#bbdefb);display:flex;align-items:center;justify-content:center;font-size:40px;flex-shrink:0">
+        🧑
+      </div>
+      <div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700;letter-spacing:.1em;display:block;margin-bottom:4px">STAFF 03 ／ 送迎ドライバー</span>
+        <h3 style="font-size:17px;font-weight:700;margin-bottom:10px">●●さん（入職●年目）</h3>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:10px">
+          定年後の第二の仕事として来夢の里のドライバーに応募しました。
+          毎朝利用者さんを迎えに行くと「おはよう！」と元気よく出てきてくれるのが
+          一日の元気の源です。
+        </p>
+        <p style="font-size:14px;color:#5a4a3a;line-height:1.95">
+          送迎中の何気ない会話も楽しくて、利用者さんのことがだんだんわかってきました。
+          体が動く限り、続けていきたい仕事です。
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:linear-gradient(135deg,#3d2b1f,#7a5c45);border-radius:18px;padding:32px;text-align:center;color:#fff">
+    <p style="font-size:15px;font-weight:600;margin-bottom:8px">あなたも来夢の里の仲間になりませんか？</p>
+    <p style="font-size:13px;opacity:.85;margin-bottom:20px;line-height:1.8">見学・話を聞くだけでも歓迎です。お気軽にどうぞ。</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="/recruit#apply" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;background:#c0392b;color:#fff">📝 応募する</a>
+      <a href="tel:0178208641" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;background:#f5c518;color:#3d2b1f">📞 0178-20-8641</a>
+    </div>
+  </div>
+
+</article>
+
+
+<!-- =====================================================
+  ③ Contact Form 7 応募フォーム設定コード
+
+  管理画面 → お問い合わせ → 新規追加
+  タイトル：「採用応募フォーム」
+  ===================================================== -->
+
+<!--
+=== CF7 フォームタブ ===
+
+<div style="display:flex;flex-direction:column;gap:12px">
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">お名前 <span style="color:#c0392b">*</span></label>
+[text* your-name placeholder "例：来夢　太郎"]
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">メールアドレス <span style="color:#c0392b">*</span></label>
+[email* your-email placeholder "例：raimu@example.com"]
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">電話番号 <span style="color:#c0392b">*</span></label>
+[tel* your-tel placeholder "例：090-0000-0000"]
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">希望する職種 <span style="color:#c0392b">*</span></label>
+[select* your-position "生活支援員（正職員）" "生活支援員（パート）" "製菓・作業補助スタッフ（パート）" "送迎ドライバー（パート）" "まだ決まっていない・相談したい"]
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">お問い合わせの種類 <span style="color:#c0392b">*</span></label>
+[select* your-type "応募したい" "見学だけしたい" "話を聞きたい" "その他"]
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">資格・経験（任意）</label>
+[textarea your-career placeholder "例：介護職3年経験あり、無資格・未経験、など\nお気軽にご記入ください"]
+
+<label style="font-size:13px;font-weight:600;color:#3d2b1f">ご質問・ご要望（任意）</label>
+[textarea your-message placeholder "勤務時間の相談・見学希望日など、何でもどうぞ"]
+
+[submit "送信する 📨"]
+
+</div>
+
+
+=== CF7 メール（施設側への通知）===
+
+件名: 【来夢の里】採用へのお問い合わせが届きました
+本文:
+────────────────────
+来夢の里 採用フォームよりお問い合わせが届きました。
+────────────────────
+
+■ お名前：[your-name]
+■ メール：[your-email]
+■ 電話番号：[your-tel]
+■ 希望職種：[your-position]
+■ お問い合わせ種類：[your-type]
+■ 資格・経験：[your-career]
+■ ご質問・ご要望：[your-message]
+
+────────────────────
+※ 2〜3営業日以内にご連絡ください。
+
+
+=== CF7 メール（応募者への自動返信）===
+
+件名: 【来夢の里】お問い合わせありがとうございます
+本文:
+[your-name] 様
+
+来夢の里の採用情報にご興味をお持ちいただき、
+誠にありがとうございます。
+
+以下の内容でお問い合わせを受け付けました。
+
+────────────────────
+■ 希望職種：[your-position]
+■ お問い合わせ種類：[your-type]
+■ ご質問・ご要望：[your-message]
+────────────────────
+
+2〜3営業日以内に担当者よりご連絡いたします。
+
+見学・面談の日程についても、ご希望に合わせて
+調整いたしますのでお気軽にご相談ください。
+
+────────────────────
+特定非営利活動法人 来夢の里
+〒039-1103 青森県八戸市大字新井田字常光田25-1
+TEL: 0178-20-8641（9:30〜15:30 / 土日祝除く）
+採用ページ: https://あなたのドメイン/recruit
+────────────────────
+-->

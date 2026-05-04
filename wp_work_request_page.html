@@ -1,0 +1,479 @@
+<!-- =====================================================
+  来夢の里 作業依頼専用ページ
+  
+  【使い方】
+  WordPress管理画面 → 固定ページ → 新規追加
+  タイトル：作業・内職のご依頼
+  スラッグ：work-request
+  → カスタムHTMLブロックにこのコード全体を貼る
+  → 「公開」
+  
+  【内部リンクの設定】
+  トップページ・ナビメニューから
+  /work-request に向けてリンクを設定してください。
+  
+  【ページ内アンカーリンク一覧】
+  #work-hero      ページトップ
+  #work-results   実績
+  #work-types     作業内容一覧
+  #work-csr       CSR・社会貢献
+  #work-flow      依頼の流れ
+  #work-faq       よくある質問
+  #work-form      お問い合わせフォーム
+  ===================================================== -->
+
+<article style="font-family:'Noto Sans JP',sans-serif;color:#3d2b1f;line-height:1.85">
+
+  <!-- ページナビ（ページ内ジャンプ） -->
+  <div style="background:#fff;border-bottom:1.5px solid #f0e4d0;position:sticky;top:68px;z-index:100;padding:0 28px">
+    <div style="max-width:1140px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none">
+      <a href="#work-types" style="text-decoration:none;color:#7a5c45;font-size:13px;font-weight:600;padding:14px 18px;white-space:nowrap;border-bottom:2.5px solid transparent;transition:color .18s,border-color .18s" onmouseover="this.style.color='#e67e22';this.style.borderColor='#e67e22'" onmouseout="this.style.color='#7a5c45';this.style.borderColor='transparent'">作業内容</a>
+      <a href="#work-results" style="text-decoration:none;color:#7a5c45;font-size:13px;font-weight:600;padding:14px 18px;white-space:nowrap;border-bottom:2.5px solid transparent;transition:color .18s,border-color .18s" onmouseover="this.style.color='#e67e22';this.style.borderColor='#e67e22'" onmouseout="this.style.color='#7a5c45';this.style.borderColor='transparent'">実績</a>
+      <a href="#work-csr" style="text-decoration:none;color:#7a5c45;font-size:13px;font-weight:600;padding:14px 18px;white-space:nowrap;border-bottom:2.5px solid transparent;transition:color .18s,border-color .18s" onmouseover="this.style.color='#e67e22';this.style.borderColor='#e67e22'" onmouseout="this.style.color='#7a5c45';this.style.borderColor='transparent'">CSR・社会貢献</a>
+      <a href="#work-flow" style="text-decoration:none;color:#7a5c45;font-size:13px;font-weight:600;padding:14px 18px;white-space:nowrap;border-bottom:2.5px solid transparent;transition:color .18s,border-color .18s" onmouseover="this.style.color='#e67e22';this.style.borderColor='#e67e22'" onmouseout="this.style.color='#7a5c45';this.style.borderColor='transparent'">依頼の流れ</a>
+      <a href="#work-faq" style="text-decoration:none;color:#7a5c45;font-size:13px;font-weight:600;padding:14px 18px;white-space:nowrap;border-bottom:2.5px solid transparent;transition:color .18s,border-color .18s" onmouseover="this.style.color='#e67e22';this.style.borderColor='#e67e22'" onmouseout="this.style.color='#7a5c45';this.style.borderColor='transparent'">よくある質問</a>
+      <a href="#work-form" style="text-decoration:none;color:#fff;font-size:13px;font-weight:700;padding:10px 20px;margin:8px 0 8px 8px;background:#c0392b;border-radius:22px;white-space:nowrap;flex-shrink:0">📩 依頼する</a>
+    </div>
+  </div>
+
+  <!-- ヒーロー -->
+  <div id="work-hero" style="background:linear-gradient(155deg,#f0f7f1 0%,#e8f5e9 50%,#dff0e0 100%);padding:72px 28px;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(circle,rgba(46,139,87,.07) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none"></div>
+    <div style="max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;z-index:1">
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#2e8b57;color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em;padding:5px 16px;border-radius:30px;margin-bottom:22px;box-shadow:0 3px 12px rgba(46,139,87,.3)">✂️ WORK REQUEST</span>
+        <h1 style="font-family:'Noto Serif JP',serif;font-size:clamp(26px,3.6vw,42px);font-weight:700;line-height:1.5;margin-bottom:20px;color:#3d2b1f">
+          軽作業・内職の<br>
+          <span style="color:#2e8b57;position:relative;display:inline">ご依頼</span>をお待ちしています
+        </h1>
+        <p style="font-size:14px;color:#5a6a5a;line-height:1.95;margin-bottom:28px">
+          来夢の里では、企業・個人の皆様から軽作業・内職のご依頼をお受けしています。<br>
+          利用者さんが丁寧・確実に仕上げます。<br>
+          <strong style="color:#2e8b57">釣り具の組み立て・お菓子の箱詰めの実績あり。</strong><br>
+          小ロットから対応可能です。お気軽にご相談ください。
+        </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <a href="#work-form" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:32px;font-size:14px;font-weight:700;text-decoration:none;background:#2e8b57;color:#fff;box-shadow:0 4px 16px rgba(46,139,87,.35)">📩 作業依頼・相談する</a>
+          <a href="tel:0178208641" style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:32px;font-size:14px;font-weight:700;text-decoration:none;background:transparent;color:#2e8b57;border:2.5px solid #2e8b57">📞 電話で相談する</a>
+        </div>
+      </div>
+      <!-- 特徴カード -->
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="background:rgba(255,255,255,.92);border-radius:18px;padding:18px 22px;display:flex;align-items:center;gap:16px;box-shadow:0 6px 24px rgba(46,139,87,.1);border:1.5px solid rgba(255,255,255,.8)">
+          <div style="width:52px;height:52px;border-radius:14px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">🏆</div>
+          <div><h3 style="font-size:14px;font-weight:700;margin-bottom:3px">釣り具組み立て・菓子箱詰めの実績あり</h3><p style="font-size:12px;color:#7a5c45;line-height:1.5">継続的にご依頼いただいている作業です</p></div>
+        </div>
+        <div style="background:rgba(255,255,255,.92);border-radius:18px;padding:18px 22px;display:flex;align-items:center;gap:16px;box-shadow:0 6px 24px rgba(46,139,87,.1);border:1.5px solid rgba(255,255,255,.8)">
+          <div style="width:52px;height:52px;border-radius:14px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">📦</div>
+          <div><h3 style="font-size:14px;font-weight:700;margin-bottom:3px">小ロット（数十個〜）から対応可能</h3><p style="font-size:12px;color:#7a5c45;line-height:1.5">大量でなくてもOK。まずご相談ください</p></div>
+        </div>
+        <div style="background:rgba(255,255,255,.92);border-radius:18px;padding:18px 22px;display:flex;align-items:center;gap:16px;box-shadow:0 6px 24px rgba(46,139,87,.1);border:1.5px solid rgba(255,255,255,.8)">
+          <div style="width:52px;height:52px;border-radius:14px;background:#e8f5e9;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">💚</div>
+          <div><h3 style="font-size:14px;font-weight:700;margin-bottom:3px">発注がCSR・社会貢献活動になる</h3><p style="font-size:12px;color:#7a5c45;line-height:1.5">障がい者就労支援への貢献として報告できます</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 実績 -->
+  <div id="work-results" style="background:#fff;padding:72px 28px">
+    <div style="max-width:1140px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:44px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#2e8b57;margin-bottom:6px">TRACK RECORD</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,30px);font-weight:700;color:#3d2b1f;margin-bottom:12px">委託実績</h2>
+        <p style="font-size:14px;color:#7a5c45;max-width:520px;margin:0 auto;line-height:1.95">
+          現在継続してご依頼いただいている作業をご紹介します。<br>
+          丁寧・確実な仕上がりにご好評をいただいています。
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+
+        <!-- 実績①：釣り具 -->
+        <div style="background:linear-gradient(135deg,#f0f7f1,#e8f5e9);border-radius:22px;padding:36px;border:1.5px solid #c8e6c9;position:relative;overflow:hidden">
+          <div style="position:absolute;top:20px;right:20px;background:#2e8b57;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px">継続実績あり</div>
+          <span style="font-size:52px;display:block;margin-bottom:16px">🎣</span>
+          <h3 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;margin-bottom:12px;color:#3d2b1f">釣り具の組み立て</h3>
+          <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:16px">
+            釣り具部品の組み立て・セット作業を継続的にお受けしています。
+            細かい部品を丁寧に扱うことが得意な利用者さんが担当しており、
+            品質管理も徹底しています。
+          </p>
+          <div style="background:rgba(255,255,255,.7);border-radius:12px;padding:14px 16px">
+            <p style="font-size:12px;color:#5a4a3a;line-height:1.8;margin:0">
+              ✅ 部品の仕分け・組み合わせ<br>
+              ✅ 袋詰め・梱包<br>
+              ✅ 数量確認・検品
+            </p>
+          </div>
+        </div>
+
+        <!-- 実績②：お菓子箱詰め -->
+        <div style="background:linear-gradient(135deg,#fff9f0,#fff3e0);border-radius:22px;padding:36px;border:1.5px solid #ffd0a0;position:relative;overflow:hidden">
+          <div style="position:absolute;top:20px;right:20px;background:#e67e22;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px">継続実績あり</div>
+          <span style="font-size:52px;display:block;margin-bottom:16px">🍱</span>
+          <h3 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;margin-bottom:12px;color:#3d2b1f">お菓子の箱詰め・梱包</h3>
+          <p style="font-size:14px;color:#5a4a3a;line-height:1.95;margin-bottom:16px">
+            お菓子の箱詰め・袋詰め・梱包作業を継続的にお受けしています。
+            丁寧な作業と清潔な環境管理で、食品関連の作業にも対応しています。
+          </p>
+          <div style="background:rgba(255,255,255,.7);border-radius:12px;padding:14px 16px">
+            <p style="font-size:12px;color:#5a4a3a;line-height:1.8;margin:0">
+              ✅ 箱・袋への詰め作業<br>
+              ✅ シール貼り・封緘<br>
+              ✅ 数量確認・出荷準備
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 作業内容一覧 -->
+  <div id="work-types" style="background:#f0f7f1;padding:72px 28px">
+    <div style="max-width:1140px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:44px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#2e8b57;margin-bottom:6px">WORK TYPES</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,30px);font-weight:700;color:#3d2b1f;margin-bottom:12px">対応できる作業内容</h2>
+        <p style="font-size:14px;color:#7a5c45;max-width:520px;margin:0 auto;line-height:1.95">
+          以下はすべて施設内で対応可能な作業です。<br>
+          一覧にない作業もお気軽にご相談ください。
+        </p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px">
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #2e8b57;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">🎣</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">釣り具の組み立て</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">部品の仕分け・組み合わせ・袋詰めまで一貫対応。細かい作業も丁寧に仕上げます。</p>
+          <span style="font-size:11px;background:#e8f5e9;color:#2e8b57;border:1px solid #c8e6c9;padding:3px 10px;border-radius:20px;font-weight:600">実績あり</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #e67e22;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">🍱</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">お菓子・食品の箱詰め・袋詰め</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">食品関連の梱包・箱詰め・袋詰め作業。清潔な環境で丁寧に対応します。</p>
+          <span style="font-size:11px;background:#e8f5e9;color:#2e8b57;border:1px solid #c8e6c9;padding:3px 10px;border-radius:20px;font-weight:600">実績あり</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #2e8b57;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">📦</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">袋詰め・封入作業</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">商品・チラシ・カタログなどの袋詰め・封筒への封入。数量・サイズはご相談ください。</p>
+          <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:3px 10px;border-radius:20px;font-weight:600">対応可</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #2e8b57;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">🏷</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">シール貼り・ラベリング</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">商品・梱包材へのシール・値札・バーコードラベルの貼り付けを丁寧に行います。</p>
+          <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:3px 10px;border-radius:20px;font-weight:600">対応可</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #2e8b57;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">📬</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">DM・チラシの封入・発送準備</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">ダイレクトメールの折り込み・封入・仕分けなど発送前の作業をまとめてお任せください。</p>
+          <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:3px 10px;border-radius:20px;font-weight:600">対応可</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #2e8b57;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">🔢</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">仕分け・数量確認</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">部品・販促品・サンプルなどの仕分けや数え分け。繰り返し作業を正確に行います。</p>
+          <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:3px 10px;border-radius:20px;font-weight:600">対応可</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #2e8b57;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">🔧</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">部品の組み立て・セット作り</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">釣り具の実績を活かした部品組み立て。販促キット・セット商品の組み合わせなども対応します。</p>
+          <span style="font-size:11px;background:#fff3e0;color:#e67e22;border:1px solid #ffd0a0;padding:3px 10px;border-radius:20px;font-weight:600">対応可</span>
+        </div>
+
+        <div style="background:#fff;border-radius:18px;padding:26px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-left:4px solid #f5c518;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 28px rgba(0,0,0,.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)'">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <span style="font-size:32px">💬</span>
+            <h3 style="font-size:16px;font-weight:700;color:#3d2b1f">その他・要相談</h3>
+          </div>
+          <p style="font-size:13px;color:#7a5c45;line-height:1.8;margin-bottom:12px">上記以外の作業もまずはご相談ください。内容を確認のうえ、対応可能かご回答します。</p>
+          <span style="font-size:11px;background:#fffde7;color:#b8860b;border:1px solid #f5c518;padding:3px 10px;border-radius:20px;font-weight:600">要相談</span>
+        </div>
+
+      </div>
+
+      <!-- 対応条件の注記 -->
+      <div style="margin-top:32px;background:#fff;border-radius:16px;padding:24px 28px;border:1.5px solid #c8e6c9">
+        <h3 style="font-size:15px;font-weight:700;margin-bottom:14px;color:#3d2b1f">📋 対応条件について</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:16px;flex-shrink:0;margin-top:1px">✅</span>
+            <div><strong style="font-size:13px;display:block;margin-bottom:2px">小ロット歓迎</strong><p style="font-size:12px;color:#7a5c45;line-height:1.6;margin:0">数十個〜の小ロットから対応可能です。</p></div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:16px;flex-shrink:0;margin-top:1px">✅</span>
+            <div><strong style="font-size:13px;display:block;margin-bottom:2px">施設内作業のみ</strong><p style="font-size:12px;color:#7a5c45;line-height:1.6;margin:0">出張・現地作業はお受けできません。材料の搬入・完成品の引き取りをお願いします。</p></div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:16px;flex-shrink:0;margin-top:1px">✅</span>
+            <div><strong style="font-size:13px;display:block;margin-bottom:2px">納期は要相談</strong><p style="font-size:12px;color:#7a5c45;line-height:1.6;margin:0">作業量・内容によりご相談のうえ決定します。</p></div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <span style="font-size:16px;flex-shrink:0;margin-top:1px">✅</span>
+            <div><strong style="font-size:13px;display:block;margin-bottom:2px">料金はお見積もり</strong><p style="font-size:12px;color:#7a5c45;line-height:1.6;margin:0">作業内容・数量に応じてご提案します。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSR・社会貢献 -->
+  <div id="work-csr" style="background:linear-gradient(135deg,#3d2b1f,#2e6b45);padding:72px 28px;color:#fff">
+    <div style="max-width:1140px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:44px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#a8e6c0;margin-bottom:6px">CSR / SOCIAL CONTRIBUTION</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,30px);font-weight:700;margin-bottom:14px">発注が、そのまま社会貢献になります</h2>
+        <p style="font-size:14px;opacity:.85;max-width:560px;margin:0 auto;line-height:1.95">
+          来夢の里への作業発注は、障がいのある方々の<strong style="color:#f5c518">就労機会の創出</strong>と<strong style="color:#f5c518">工賃向上</strong>に直結します。
+          企業のCSR活動・社会貢献報告書にもご活用いただけます。
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px">
+        <div style="background:rgba(255,255,255,.1);border-radius:18px;padding:28px;text-align:center;border:1.5px solid rgba(255,255,255,.15)">
+          <span style="font-size:44px;display:block;margin-bottom:14px">💼</span>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">就労機会の創出</h3>
+          <p style="font-size:13px;opacity:.82;line-height:1.75">発注いただいた作業が、利用者さんの「働く場」になります。社会参加の機会を一緒につくってください。</p>
+        </div>
+        <div style="background:rgba(255,255,255,.1);border-radius:18px;padding:28px;text-align:center;border:1.5px solid rgba(255,255,255,.15)">
+          <span style="font-size:44px;display:block;margin-bottom:14px">💴</span>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">工賃（お給料）につながる</h3>
+          <p style="font-size:13px;opacity:.82;line-height:1.75">発注金額の一部が利用者さんの工賃に。「自分で稼いだお金」が自信と生きがいになります。</p>
+        </div>
+        <div style="background:rgba(255,255,255,.1);border-radius:18px;padding:28px;text-align:center;border:1.5px solid rgba(255,255,255,.15)">
+          <span style="font-size:44px;display:block;margin-bottom:14px">📄</span>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">CSR報告書に記載できる</h3>
+          <p style="font-size:13px;opacity:.82;line-height:1.75">「障がい者就労支援施設への発注実績」として、CSR報告書・ホームページに掲載いただけます。</p>
+        </div>
+        <div style="background:rgba(255,255,255,.1);border-radius:18px;padding:28px;text-align:center;border:1.5px solid rgba(255,255,255,.15)">
+          <span style="font-size:44px;display:block;margin-bottom:14px">🤝</span>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">地域貢献にもなる</h3>
+          <p style="font-size:13px;opacity:.82;line-height:1.75">八戸市内の施設への発注は、地域の障がい福祉を支える取り組みとしてPRできます。</p>
+        </div>
+      </div>
+      <div style="margin-top:36px;background:rgba(245,197,24,.15);border-radius:16px;padding:22px 28px;border:1.5px solid rgba(245,197,24,.4);text-align:center">
+        <p style="font-size:14px;line-height:1.9;margin:0">
+          💡 <strong style="color:#f5c518">「障害者優先調達推進法」</strong>により、国・地方公共団体だけでなく民間企業も障がい者就労施設への発注が推奨されています。<br>
+          来夢の里への発注は、この取り組みの実践になります。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 依頼の流れ -->
+  <div id="work-flow" style="background:#fff;padding:72px 28px">
+    <div style="max-width:860px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:44px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#2e8b57;margin-bottom:6px">FLOW</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,30px);font-weight:700;color:#3d2b1f">依頼から納品までの流れ</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div style="display:flex;gap:0;align-items:stretch">
+          <div style="width:100px;flex-shrink:0;display:flex;flex-direction:column;align-items:center">
+            <div style="width:52px;height:52px;border-radius:50%;background:#2e8b57;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">1</div>
+            <div style="width:2px;background:#e0f0e0;flex:1;margin-top:4px"></div>
+          </div>
+          <div style="padding:0 0 32px 16px;flex:1">
+            <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#3d2b1f;margin-top:12px">お問い合わせ・ご相談</h3>
+            <p style="font-size:13px;color:#7a5c45;line-height:1.8">フォームまたはお電話でご連絡ください。作業内容・数量・希望納期などをお知らせいただければ、対応可否と概算をお伝えします。「まず相談だけ」も歓迎です。</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:0;align-items:stretch">
+          <div style="width:100px;flex-shrink:0;display:flex;flex-direction:column;align-items:center">
+            <div style="width:52px;height:52px;border-radius:50%;background:#2e8b57;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">2</div>
+            <div style="width:2px;background:#e0f0e0;flex:1;margin-top:4px"></div>
+          </div>
+          <div style="padding:0 0 32px 16px;flex:1">
+            <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#3d2b1f;margin-top:12px">内容確認・お見積もり</h3>
+            <p style="font-size:13px;color:#7a5c45;line-height:1.8">作業内容・数量・サンプル等をご確認のうえ、料金・納期をご提案します。サンプルをお送りいただけると、より正確なお見積もりが可能です。</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:0;align-items:stretch">
+          <div style="width:100px;flex-shrink:0;display:flex;flex-direction:column;align-items:center">
+            <div style="width:52px;height:52px;border-radius:50%;background:#2e8b57;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">3</div>
+            <div style="width:2px;background:#e0f0e0;flex:1;margin-top:4px"></div>
+          </div>
+          <div style="padding:0 0 32px 16px;flex:1">
+            <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#3d2b1f;margin-top:12px">材料の搬入・受け取り</h3>
+            <p style="font-size:13px;color:#7a5c45;line-height:1.8">作業材料を施設までお持ちいただくか、宅配便でお送りください。受け取り後、作業を開始します。</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:0;align-items:stretch">
+          <div style="width:100px;flex-shrink:0;display:flex;flex-direction:column;align-items:center">
+            <div style="width:52px;height:52px;border-radius:50%;background:#2e8b57;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">4</div>
+            <div style="width:2px;background:#e0f0e0;flex:1;margin-top:4px"></div>
+          </div>
+          <div style="padding:0 0 32px 16px;flex:1">
+            <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#3d2b1f;margin-top:12px">作業・品質チェック</h3>
+            <p style="font-size:13px;color:#7a5c45;line-height:1.8">利用者さんが丁寧に作業します。完了後はスタッフが数量確認・品質チェックを行います。</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:0;align-items:flex-start">
+          <div style="width:100px;flex-shrink:0;display:flex;flex-direction:column;align-items:center">
+            <div style="width:52px;height:52px;border-radius:50%;background:#e67e22;color:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">5</div>
+          </div>
+          <div style="padding:0 0 0 16px;flex:1">
+            <h3 style="font-size:16px;font-weight:700;margin-bottom:8px;color:#3d2b1f;margin-top:12px">納品・お引き取り</h3>
+            <p style="font-size:13px;color:#7a5c45;line-height:1.8">完成品のお引き取り、または宅配便での発送に対応します。請求書をお送りしますので、ご確認後にお振込みをお願いします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- よくある質問 -->
+  <div id="work-faq" style="background:#f0f7f1;padding:72px 28px">
+    <div style="max-width:780px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:44px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#2e8b57;margin-bottom:6px">FAQ</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,30px);font-weight:700;color:#3d2b1f">よくある質問</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+
+        <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #c8e6c9">
+          <div style="background:#e8f5e9;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">Q.</span>
+            <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">どのくらいの量から依頼できますか？</p>
+          </div>
+          <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">A.</span>
+            <p style="font-size:13px;color:#5a4a3a;margin:0;line-height:1.85">数十個程度の小ロットから対応可能です。大量でなくても構いません。まずはご相談ください。作業内容によって異なりますので、お気軽にお問い合わせを。</p>
+          </div>
+        </div>
+
+        <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #c8e6c9">
+          <div style="background:#e8f5e9;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">Q.</span>
+            <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">料金はどのくらいかかりますか？</p>
+          </div>
+          <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">A.</span>
+            <p style="font-size:13px;color:#5a4a3a;margin:0;line-height:1.85">作業内容・数量・難易度によって異なります。お見積もりは無料ですので、まずはお気軽にご相談ください。リーズナブルな料金でご提案します。</p>
+          </div>
+        </div>
+
+        <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #c8e6c9">
+          <div style="background:#e8f5e9;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">Q.</span>
+            <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">材料の受け渡しはどうすればいいですか？</p>
+          </div>
+          <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">A.</span>
+            <p style="font-size:13px;color:#5a4a3a;margin:0;line-height:1.85">施設への持ち込み、または宅配便での発送に対応しています。完成品のお引き取りも施設窓口か宅配便で対応します。出張対応は難しい状況ですのでご了承ください。</p>
+          </div>
+        </div>
+
+        <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #c8e6c9">
+          <div style="background:#e8f5e9;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">Q.</span>
+            <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">納期はどのくらいかかりますか？</p>
+          </div>
+          <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">A.</span>
+            <p style="font-size:13px;color:#5a4a3a;margin:0;line-height:1.85">作業量・内容によって異なります。ご依頼時に希望納期をお知らせいただければ、対応可能かご回答します。余裕を持ったスケジュールでご依頼いただけると助かります。</p>
+          </div>
+        </div>
+
+        <div style="background:#fff;border-radius:14px;overflow:hidden;border:1.5px solid #c8e6c9">
+          <div style="background:#e8f5e9;padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#2e8b57;flex-shrink:0;line-height:1.4">Q.</span>
+            <p style="font-size:14px;font-weight:600;margin:0;line-height:1.7">継続的な依頼は可能ですか？</p>
+          </div>
+          <div style="padding:16px 20px;display:flex;gap:12px;align-items:flex-start">
+            <span style="font-size:17px;font-weight:700;color:#e67e22;flex-shrink:0;line-height:1.4">A.</span>
+            <p style="font-size:13px;color:#5a4a3a;margin:0;line-height:1.85">もちろんです！継続的なご依頼は利用者さんの就労安定にもつながるため、大変ありがたいです。釣り具・菓子箱詰めも継続依頼をいただいています。ぜひ長いお付き合いをお願いします。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- お問い合わせフォーム -->
+  <div id="work-form" style="background:#fff;padding:72px 28px">
+    <div style="max-width:680px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:36px">
+        <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;color:#2e8b57;margin-bottom:6px">CONTACT</span>
+        <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(20px,3vw,26px);font-weight:700;margin-bottom:10px;color:#3d2b1f">作業依頼・お問い合わせフォーム</h2>
+        <p style="font-size:13px;color:#7a5c45;line-height:1.8">
+          作業内容・数量・希望納期などをご記入ください。<br>
+          2〜3営業日以内に担当者よりご連絡します。<br>
+          「まず相談だけ」でも大歓迎です。
+        </p>
+      </div>
+      <div class="raimu-form-box" style="box-shadow:0 6px 28px rgba(46,139,87,.12);border:1.5px solid #c8e6c9">
+        [contact-form-7 id="★作業依頼フォームID★" title="作業依頼フォーム"]
+      </div>
+      <div style="margin-top:20px;text-align:center">
+        <p style="font-size:13px;color:#7a5c45;line-height:1.8">
+          お電話でのご相談も受け付けています<br>
+          <a href="tel:0178208641" style="color:#2e8b57;font-weight:700;font-size:16px;text-decoration:none">📞 0178-20-8641</a><br>
+          <span style="font-size:12px">受付時間：9:30〜15:30（土日祝・年末年始を除く）</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 他ページへの内部リンク -->
+  <div style="background:#fdf8f2;padding:44px 28px;border-top:1.5px solid #f0e4d0">
+    <div style="max-width:1140px;margin:0 auto">
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;margin-bottom:20px;color:#3d2b1f;text-align:center">来夢の里について、もっと知る</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px">
+        <a href="/about" style="display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;color:#3d2b1f;border:1.5px solid #f0e4d0;transition:border-color .2s" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+          <span style="font-size:24px;flex-shrink:0">🏠</span><div><strong style="font-size:13px;display:block">施設について</strong><span style="font-size:11px;color:#7a5c45">来夢の里の理念・概要</span></div>
+        </a>
+        <a href="/services" style="display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;color:#3d2b1f;border:1.5px solid #f0e4d0;transition:border-color .2s" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+          <span style="font-size:24px;flex-shrink:0">📋</span><div><strong style="font-size:13px;display:block">サービス内容</strong><span style="font-size:11px;color:#7a5c45">事業・日課表など</span></div>
+        </a>
+        <a href="/sweets" style="display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;color:#3d2b1f;border:1.5px solid #f0e4d0;transition:border-color .2s" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+          <span style="font-size:24px;flex-shrink:0">🧁</span><div><strong style="font-size:13px;display:block">お菓子のご注文</strong><span style="font-size:11px;color:#7a5c45">手作りお菓子の販売</span></div>
+        </a>
+        <a href="/recruit" style="display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;color:#3d2b1f;border:1.5px solid #f0e4d0;transition:border-color .2s" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+          <span style="font-size:24px;flex-shrink:0">👩‍⚕️</span><div><strong style="font-size:13px;display:block">採用情報</strong><span style="font-size:11px;color:#7a5c45">スタッフ募集中</span></div>
+        </a>
+        <a href="/contact" style="display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;color:#3d2b1f;border:1.5px solid #f0e4d0;transition:border-color .2s" onmouseover="this.style.borderColor='#e67e22'" onmouseout="this.style.borderColor='#f0e4d0'">
+          <span style="font-size:24px;flex-shrink:0">📩</span><div><strong style="font-size:13px;display:block">お問い合わせ</strong><span style="font-size:11px;color:#7a5c45">総合お問い合わせ</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</article>
+
+<script>
+// ページ内スムーズスクロール
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
